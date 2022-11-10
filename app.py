@@ -4,7 +4,8 @@ import bot
 from neural_links import learning
 from flask_cors import CORS, cross_origin
 
-app = Flask(__name__)
+app = Flask(__name__, static_url_path='/',
+            static_folder='templates', template_folder='templates')
 CORS(app)
 
 @app.route('/', methods=['POST'])
