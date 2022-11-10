@@ -15,7 +15,7 @@ def home():
     msg = resp.message()
     jarvis = bot.init(user_msg)
     print(user_msg, ' - ', jarvis)
-    learning.listening_all_time(user_msg, jarvis)
+    #learning.listening_all_time(user_msg, jarvis)
     msg.body(jarvis)
     return str(resp)
 
